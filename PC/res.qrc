@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/image/fangxiang">
+        <file>image/fangxiang/down.png</file>
+        <file>image/fangxiang/down_hover.png</file>
+        <file>image/fangxiang/down_pressed.png</file>
+        <file>image/fangxiang/left.png</file>
+        <file>image/fangxiang/left_hover.png</file>
+        <file>image/fangxiang/left_pressed.png</file>
+        <file>image/fangxiang/ok.png</file>
+        <file>image/fangxiang/right.png</file>
+        <file>image/fangxiang/right_hover.png</file>
+        <file>image/fangxiang/right_pressed.png</file>
+        <file>image/fangxiang/up.png</file>
+        <file>image/fangxiang/up_hover.png</file>
+        <file>image/fangxiang/up_pressed.png</file>
+        <file>image/fangxiang/fangxiangpan.png</file>
+        <file>image/fangxiang/bg.png</file>
+    </qresource>
+</RCC>

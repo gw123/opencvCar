@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>865</width>
+    <height>479</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">.QMainWindow{
+
+	background-color: rgb(0, 0, 0);
+
+}
+QWidget{
+  
+	background-color: rgb(12, 222, 100);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+rgb(170, 255, 255)
+}
+
+QPushButton {
+background-color: #fe90ef;
+border-width: 2px;
+border-color: darkkhaki;
+border-style: solid;
+border-radius: 5;
+padding: 3px;
+min-width: 9ex;
+min-height: 2.5ex;
+}
+
+QPushButton:hover {
+background-color: #9e80ef;
+}
+
+QPushButton:pressed {
+    padding-left: 5px;
+    padding-top: 5px;
+    background-color: #8e607f;
+}</string>
+   </property>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>651</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+ background-color: rgb(100,200, 255);
+ border-color: rgb(85, 0, 127);
+}
+Qlable{
+ background-color: rgb(30, 50, 125);
+ border:5px;
+ border-color: rgb(5, 10, 127);
+}</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="lable_1">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="text">
+        <string>视频通道1</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_2">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string>视频通道2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="text">
+        <string>视频通道3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="label_4">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="text">
+        <string>视频通道4</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="btnSelectVideoFile">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>110</y>
+      <width>131</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: #fe90ef;
+border-width: 2px;
+border-color: darkkhaki;
+border-style: solid;
+border-radius: 5;
+padding: 3px;
+min-width: 9ex;
+min-height: 2.5ex;
+}
+
+QPushButton:hover {
+background-color: #9e80ef;
+}
+
+QPushButton:pressed {
+    padding-left: 5px;
+    padding-top: 5px;
+    background-color: #8e607f;
+}</string>
+    </property>
+    <property name="text">
+     <string>读取视频文件</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_videopath">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>30</y>
+      <width>151</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">Qlable{
+ width:100px;
+rgb(0, 255, 255);
+background-color: #fe90ef;
+border-width:1px;
+border-color: darkkhaki;
+border-style: solid;
+border-radius: 5;
+padding: 3px;
+min-width: 9ex;
+min-height: 2.5ex;
+}
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="text">
+     <string>视频:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>260</y>
+      <width>181</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+
+
+}
+QPushButton {
+background-color:transparent;
+margin:0px;
+padding:0px;
+}
+
+QPushButton:hover {
+
+}
+
+QPushButton:pressed {
+
+}</string>
+    </property>
+    <widget class="QPushButton" name="btnUp">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>19</y>
+       <width>100</width>
+       <height>47</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+background-color: transparent;
+
+background-image:url(&quot;:/image/fangxiang/image/fangxiang/up.png&quot;)  ;
+
+}
+
+QPushButton:hover {
+background-image:url(&quot;:/image/fangxiang/image/fangxiang/up_hover.png&quot;)  ;
+}
+
+QPushButton:pressed {
+background-image:url(&quot;:/image/fangxiang/image/fangxiang/up_pressed.png&quot;)  ;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_6">
+     <property name="geometry">
+      <rect>
+       <x>57</x>
+       <y>60</y>
+       <width>70</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+background-color: transparent;
+
+background-image:url(&quot;:/image/fangxiang/image/fangxiang/ok.png&quot;)  ;
+
+}
+
+QPushButton:hover {
+background-image:url(&quot;:/image/fangxiang/image/fangxiang/ok.png&quot;)  ;
+}
+
+QPushButton:pressed {
+background-image:url(&quot;:/image/fangxiang/image/fangxiang/ok.png&quot;)  ;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnRight">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>46</y>
+       <width>49</width>
+       <height>100</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+background-color: transparent;
+
+background-image:url(&quot;:/image/fangxiang/image/fangxiang/right.png&quot;)  ;
+
+}
+
+QPushButton:hover {
+background-image:url(&quot;:/image/fangxiang/image/fangxiang/right_hover.png&quot;)  ;
+}
+
+QPushButton:pressed {
+background-image:url(&quot;:/image/fangxiang/image/fangxiang/right_pressed.png&quot;)  ;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnDown">
+     <property name="geometry">
+      <rect>
+       <x>41</x>
+       <y>123</y>
+       <width>100</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+background-color: transparent;
+
+background-image:url(&quot;:/image/fangxiang/image/fangxiang/down.png&quot;)  ;
+
+}
+
+QPushButton:hover {
+background-image:url(&quot;:/image/fangxiang/image/fangxiang/down_hover.png&quot;)  ;
+}
+
+QPushButton:pressed {
+background-image:url(&quot;:/image/fangxiang/image/fangxiang/down_pressed.png&quot;)  ;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnLeft">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>45</y>
+       <width>47</width>
+       <height>100</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+background-color: transparent;
+
+background-image:url(&quot;:/image/fangxiang/image/fangxiang/left.png&quot;)  ;
+
+}
+
+QPushButton:hover {
+background-image:url(&quot;:/image/fangxiang/image/fangxiang/left_hover.png&quot;)  ;
+}
+
+QPushButton:pressed {
+background-image:url(&quot;:/image/fangxiang/image/fangxiang/left_pressed.png&quot;)  ;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btnExit">
+    <property name="geometry">
+     <rect>
+      <x>824</x>
+      <y>0</y>
+      <width>41</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>退出</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnExit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>844</x>
+     <y>11</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>432</x>
+     <y>233</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
